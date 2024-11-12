@@ -1,12 +1,10 @@
+import './App.css'
 
-import './App.css';
-
-import React from 'react';
+import React from 'react'
+import Footer from './components/Footer'
 
 const App = () => {
-  return (
-    <div>App</div>
-  );
-};
+	return <Footer />
+}
 
-export default App;
+export default App
