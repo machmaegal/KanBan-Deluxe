@@ -2,13 +2,13 @@ import './App.css'
 import React from 'react'
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
-import Sidebar from './components/Sidebar'
+import Navigation from './components/Navigation'
 
 const App = () => {
 	return (
 		<div>
 			<Navbar />
-			<Sidebar />
+			<Navigation />
 			<Footer />
 		</div>
 	)

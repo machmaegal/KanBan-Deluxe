@@ -5,6 +5,7 @@ const Sidebar = () => {
 		<div>
 			<h2>Home</h2>
 			<h2>About</h2>
+			<h2>KanBan - DLX</h2>
 		</div>
 	)
 }
