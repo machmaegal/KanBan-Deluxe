@@ -1,13 +1,13 @@
-import React from 'react'
+import React from 'react';
 
 const Sidebar = () => {
 	return (
-		<div>
-			<h2>Home</h2>
-			<h2>About</h2>
-			<h2>KanBan - DLX</h2>
+		<div className='sidebar'>
+			<button>Home</button>
+			<button>Board</button>
+			<button>About Us</button>
 		</div>
-	)
-}
+	);
+};
 
-export default Sidebar
+export default Sidebar;

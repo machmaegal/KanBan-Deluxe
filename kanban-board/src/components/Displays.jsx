@@ -1,11 +1,13 @@
-import React from 'react'
+import React from 'react';
 
 const Displays = () => {
 	return (
-		<div>
-			<h1>display evething here</h1>
+		<div className='display'>
+			<section id="toDo"></section>
+			<section id="inProgress"></section>
+			<section id="done"></section>
 		</div>
-	)
-}
+	);
+};
 
-export default Displays
+export default Displays;

@@ -1,14 +1,14 @@
-import React from 'react'
-import Sidebar from './Sidebar'
-import Displays from './Displays'
+import React from 'react';
+import Sidebar from './Sidebar';
+import Displays from './Displays';
 
 const Navigation = () => {
 	return (
-		<div>
+		<div className='main-container'>
 			<Sidebar />
 			<Displays />
 		</div>
-	)
-}
+	);
+};
 
-export default Navigation
+export default Navigation;

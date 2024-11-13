@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/kanban_doodle.png';
+import logo from '../assets/Kanban_Logo.png';
 
 function Navbar() {
     return (
