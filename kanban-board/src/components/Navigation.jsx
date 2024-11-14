@@ -1,12 +1,12 @@
 import React from 'react';
 import Sidebar from './Sidebar';
-import Displays from './Displays';
+import Display from './Display';
 
 const Navigation = () => {
 	return (
 		<div className='main-container'>
 			<Sidebar />
-			<Displays />
+			<Display />
 		</div>
 	);
 };
