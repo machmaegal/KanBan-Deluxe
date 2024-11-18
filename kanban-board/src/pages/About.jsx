@@ -3,7 +3,8 @@ import { Link, useParams } from 'react-router-dom';
 
 const About = () => {
     return (
-        <div>About</div>
+        <div><Link to='/'><button>Home</button></Link></div>
+
     );
 };
 

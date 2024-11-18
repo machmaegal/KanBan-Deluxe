@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import Tasks from './Tasks';
 
-const Display = () => {
-	const [column, setColumn] = useState(null);
+const Display = ({ taskData }) => {
+	const isToDo = taskData.filter((task) => task.status === 'To Do');
+	const isInProgress = taskData.filter((task) => task.status === 'In Progress');
+	const isDone = taskData.filter((task) => task.status === 'Done');
 
 	const handleDragOver = (e) => {
 		e.stopPropagation();
@@ -15,25 +17,29 @@ const Display = () => {
 		e.target.appendChild(document.getElementById(data));
 	};
 
+
 	return (
 		<div className='display'>
 			<section id="todo"
 				onDragOver={handleDragOver}
 				onDrop={handleDrop}
 
-			> <Tasks status={'To Do'} column={column} /> </section>
+			> <Tasks filteredTasks={isToDo} />
+			</section>
 
 			<section id="in-progress"
 				onDragOver={handleDragOver}
 				onDrop={handleDrop}
 
-			><Tasks status={'In Progress'} column={column} /> </section>
+			><Tasks filteredTasks={isInProgress} />
+			</section>
 
 			<section id="done"
 				onDragOver={handleDragOver}
 				onDrop={handleDrop}
 
-			> <Tasks status={'Done'} column={column} /> </section>
+			> <Tasks filteredTasks={isDone} />
+			</section>
 		</div>
 	);
 };

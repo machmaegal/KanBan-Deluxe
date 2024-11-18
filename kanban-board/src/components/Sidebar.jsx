@@ -3,9 +3,9 @@ import { Link, useParams } from 'react-router-dom';
 const Sidebar = () => {
 	return (
 		<div className='sidebar'>
-			<Link to='/'><button>Home</button></Link>
-			<Link to='/'><button>Board</button></Link>
+
 			<Link to='/about'><button>About Us</button></Link>
+			<Link to='/createTicket'><button>New Ticket</button></Link>
 		</div>
 	);
 };

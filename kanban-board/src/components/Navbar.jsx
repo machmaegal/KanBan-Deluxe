@@ -1,11 +1,12 @@
 import React from 'react';
 import logo from '../assets/Kanban_Logo.png';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
     return (
         <nav>
             <img src={logo} alt="kanban logo" />
-            <h1>KanBanBoard</h1>
+            <Link to='/'><h1>KanBanBoard</h1></Link>
         </nav>
     );
 }

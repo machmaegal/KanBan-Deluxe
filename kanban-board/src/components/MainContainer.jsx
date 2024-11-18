@@ -2,11 +2,11 @@ import React from 'react';
 import Sidebar from './Sidebar';
 import Display from './Display';
 
-const MainContainer = () => {
+const MainContainer = ({ taskData }) => {
 	return (
 		<div className='main-container'>
 			<Sidebar />
-			<Display />
+			<Display taskData={taskData} />
 		</div>
 	);
 };

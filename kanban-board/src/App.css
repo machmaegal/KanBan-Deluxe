@@ -41,32 +41,37 @@ section {
   width: 33%;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 /*class*/
 .main-container {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   height: 80vh;
-
 }
 
 .sidebar {
   width: 20vw;
   height: 80vh;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-
 }
 
-/* .button {
-  height: 50px;
-  width: 90px;
-  border-radius: 10px 20px;
-  border: none;
-} */
 
 .display {
   width: 80vw;
@@ -87,12 +92,11 @@ section {
 }
 
 .taskCard {
-  max-height: fit-content;
+  max-height: 30%;
   overflow: hidden;
   border-radius: 10px;
   padding: 10px;
   margin-top: 2px;
-
 }
 
 .priorityHigh {
@@ -119,7 +123,6 @@ section {
   margin-right: 5px;
   background-color: rebeccapurple;
   color: aliceblue;
-
 }
 
 .errorPageContainer {
@@ -127,4 +130,8 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.radio {
+  flex-direction: row;
 }
