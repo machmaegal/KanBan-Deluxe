@@ -2,7 +2,7 @@ import React from 'react';
 import Sidebar from './Sidebar';
 import Display from './Display';
 
-const Navigation = () => {
+const MainContainer = () => {
 	return (
 		<div className='main-container'>
 			<Sidebar />
@@ -11,4 +11,4 @@ const Navigation = () => {
 	);
 };
 
-export default Navigation;
+export default MainContainer;

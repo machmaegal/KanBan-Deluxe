@@ -61,12 +61,12 @@ section {
 
 }
 
-.sidebar>button {
-  height: 10%;
-  width: 30%;
+/* .button {
+  height: 50px;
+  width: 90px;
   border-radius: 10px 20px;
   border: none;
-}
+} */
 
 .display {
   width: 80vw;
@@ -120,4 +120,11 @@ section {
   background-color: rebeccapurple;
   color: aliceblue;
 
+}
+
+.errorPageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }

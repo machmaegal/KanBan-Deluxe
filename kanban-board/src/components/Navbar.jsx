@@ -5,7 +5,7 @@ function Navbar() {
     return (
         <nav>
             <img src={logo} alt="kanban logo" />
-            <h1>KanBan-Deluxe</h1>
+            <h1>KanBanBoard</h1>
         </nav>
     );
 }

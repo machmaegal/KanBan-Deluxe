@@ -1,11 +1,11 @@
 import React from 'react';
-
+import { Link, useParams } from 'react-router-dom';
 const Sidebar = () => {
 	return (
 		<div className='sidebar'>
-			<button>Home</button>
-			<button>Board</button>
-			<button>About Us</button>
+			<Link to='/'><button>Home</button></Link>
+			<Link to='/'><button>Board</button></Link>
+			<Link to='/about'><button>About Us</button></Link>
 		</div>
 	);
 };
